@@ -12,7 +12,7 @@ app.use(express.json())
 
 app.use("/users",userRoute)
 
-app.listen(8080,async()=>{
+app.listen(process.env.PORT||3000,async()=>{
     await connect()
     console.log("server started at port 8080")
 })
