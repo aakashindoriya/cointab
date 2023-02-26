@@ -5,7 +5,7 @@ const cors=require("cors")
 const  connect  = require("./config/connectbd")
 const userRoute=require("./route/user.routes")
 app.get("/",(req,res)=>{
-    res.send("welcome to cointab")
+    res.status(200).send("welcome to cointab")
 })
 app.use(cors())
 app.use(express.json())
